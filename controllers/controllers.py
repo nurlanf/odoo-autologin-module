@@ -46,7 +46,7 @@ from odoo.service import db, security
 
 import odoo.addons.web.controllers.main as main
 
-class MyHome(http.Controller):
+class MyHome(main.Home):
 
     @http.route('/web/login', type='http', auth="none", sitemap=False)
     def web_login(self, redirect=None, **kw):
