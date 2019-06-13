@@ -20,7 +20,7 @@
     'version': '12.0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base', 'sale', 'crm', 'invoice'],
+    'depends': ['base', 'sale', 'crm', 'account'],
 
     # always loaded
     'data': [
@@ -32,5 +32,6 @@
     'demo': [
         'demo/demo.xml',
     ],
-    autoinstall: True
+    'autoinstall': True,
+    'installable': True
 }
